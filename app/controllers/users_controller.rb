@@ -9,18 +9,11 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      flash[:success] = "Great! Your user has been created!"
       redirect_to new_user_path # go to show page for @user
     else
-      flash.now[:error] = "Fix your mistakes, please."
       render :new
     end
 
-    # if @user.save
-    #   redirect_to new_user_path
-    # else
-    #   render :new
-    # end
   end
 
   private
