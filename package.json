@@ -1,5 +1,5 @@
 {
-  "name": "Re_Former",
+  "name": "re_former",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
@@ -11,5 +11,24 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.11.0"
-  }
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdesojiCodeMaster/Re_Former.git"
+  },
+  "author": "Adesoji and Youcef.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdesojiCodeMaster/Re_Former/issues"
+  },
+  "homepage": "https://github.com/AdesojiCodeMaster/Re_Former#readme"
 }
