@@ -1,4 +1,3 @@
-<h1><b>Edit User</b></h1>
 <!-- <form accept-charset="UTF-8" action="/users" method="POST">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
@@ -26,27 +25,29 @@
 
   <%= submit_tag("Create") %>
 <% end %> -->
-
+<div class = 'form_body'>
+<h1><b>Edit User</b></h1>
 <%= form_for @user do |f| %>
     <% if @user.errors.any? %>
     <% @user.errors.full_messages.each do |error| %>
-      <p class = 'error'><%= error %></p>
+      <p class = 'error'>*<%= error %></p>
     <% end %>
   <% end %>
-  <div>
+  <div class = 'form_item'>
   <%= f.label :username %>
-  <%= f.text_field :username, placeholder: 'Enter your username!' %>
+  <%= f.text_field :username, :class => 'wide', placeholder: 'Enter your username!' %>
   </div>
   <br>
-  <div>
+  <div  class = 'form_item'>
   <%= f.label :email %>
-  <%= f.email_field :email, placeholder: 'Enter your email;jobs@hot.com' %>
+  <%= f.email_field :email, :class => 'wide', placeholder: 'Enter your email;jobs@hot.com' %>
   </div>
   <br>
-  <div>
+  <div  class = 'form_item'>
   <%= f.label :password %>
-  <%= f.password_field :password, placeholder: 'Enter your password!' %>
+  <%= f.password_field :password, :class => 'wide', placeholder: 'Enter your password!' %>
   </div>
   <br>
-  <%= f.submit "edit" %>
+  <%= f.submit "edit", :class => 'sub' %>
 <% end %> 
+</div>
