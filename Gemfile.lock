@@ -81,6 +81,7 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
+    jaro_winkler (1.5.4)
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     listen (3.2.1)
@@ -146,17 +147,14 @@ GEM
       ffi (~> 1.0)
     regexp_parser (1.8.1)
     rexml (3.2.4)
-    rubocop (0.92.0)
+    rubocop (0.81.0)
+      jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
-      parser (>= 2.7.1.5)
+      parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 1.7)
       rexml
-      rubocop-ast (>= 0.5.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (0.7.1)
-      parser (>= 2.7.1.5)
     ruby-progressbar (1.10.1)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
@@ -224,7 +222,7 @@ DEPENDENCIES
   listen (~> 3.2)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.3)
-  rubocop
+  rubocop (~> 0.81.0)
   sass-rails (>= 6)
   selenium-webdriver
   spring

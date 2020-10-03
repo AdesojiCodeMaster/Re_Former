@@ -1,22 +1,16 @@
 {
   "name": "re_former",
-  "private": true,
-  "dependencies": {
-    "@rails/actioncable": "^6.0.0",
-    "@rails/activestorage": "^6.0.0",
-    "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.3.0",
-    "turbolinks": "^5.2.0"
-  },
-  "version": "0.1.0",
-  "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
-  },
+  "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "main": "babel.config.js",
   "directories": {
     "lib": "lib",
     "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint-config-recommended": "^3.0.0",
+    "typescript": "^3.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,8 +19,8 @@
     "type": "git",
     "url": "git+https://github.com/AdesojiCodeMaster/Re_Former.git"
   },
-  "author": "Adesoji and Youcef.",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/AdesojiCodeMaster/Re_Former/issues"
   },
