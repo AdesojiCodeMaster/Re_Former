@@ -90,9 +90,9 @@ m = Module.new do
     require_error = activation_error_handling do
       require "bundler/version"
     end
-    return if require_error.nil? && Gem::Requirement.new(bundler_version).satisfied_by?(Gem::Version.new(Bundler::VERSION))
+    return if require_error.nil? && Gem::Requirement.new(bundler_version).satisfied_by?(Gem::Version.new(Bundler::VERSION)) # rubocop:disable Layout/LineLength
 
-    warn "Activating bundler (#{bundler_version}) failed:\n#{gem_error.message}\n\nTo install the version of bundler this project requires, run `gem install bundler -v '#{bundler_version}'`"
+    warn "Activating bundler (#{bundler_version}) failed:\n#{gem_error.message}\n\nTo install the version of bundler this project requires, run `gem install bundler -v '#{bundler_version}'`" # rubocop:disable Layout/LineLength
     exit 42
   end
 

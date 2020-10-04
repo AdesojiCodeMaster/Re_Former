@@ -2,11 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .field_with_errors input {
-  border: 2px solid #ff0000;
+  border: 2px solid #f00;
 }
 
 .error {
-  color: #bb0f0f;  
+  color: #bb0f0f;
 }
 
 .wide {
@@ -30,5 +30,3 @@
   width: 96px;
   background-color: #77bd0f;
 }
-
- 
