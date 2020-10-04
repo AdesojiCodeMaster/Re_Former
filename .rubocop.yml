@@ -1,6 +1,8 @@
 AllCops:
   Exclude:
-    - 'path/to/excluded/file.rb'
+    - "Guardfile"
+    - "Rakefile"
+
   DisplayCopNames: true
 
 Layout/LineLength:
