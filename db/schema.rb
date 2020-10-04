@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_02_174406) do # rubocop disable: Style/NumericLiterals
+ActiveRecord::Schema.define(version: 2020_10_02_174_406) do # rubocop disable: Style/NumericLiterals
   create_table 'users', force: :cascade do |t|
     t.string 'username'
     t.string 'email'

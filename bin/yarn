@@ -5,7 +5,7 @@ Dir.chdir(APP_ROOT) do
     exec 'yarnpkg', *ARGV
   rescue Errno::ENOENT
     warn 'Yarn executable was not detected in the system.''
-    warn 'Download Yarn at https://yarnpkg.com/en/docs/install'
+    warn 'download Yarn at https://yarnpkg.com/en/docs/install' # rubocop disable: Lint/Syntax
     exit 1
   end
 end
