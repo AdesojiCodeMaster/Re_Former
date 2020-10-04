@@ -1,3 +1,4 @@
+# rubocop disable: Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity
 #!/usr/bin/env ruby
 
 #
@@ -20,9 +21,9 @@ m = Module.new do
     ENV['BUNDLER_VERSION']
   end
 
-  def cli_arg_version # rubocop disable: Metrics/CyclomaticComplexity
+  def cli_arg_version
     # don't want to hijack other binstubs
-    return unless invoked_as_script? # rubocop disable: Metrics/CyclomaticComplexity
+    return unless invoked_as_script?
     # must be running `bundle update`
     return unless 'update'.start_with?(ARGV.first || ' ') # rubocop disable: Layout/LineLength
 
@@ -106,3 +107,4 @@ end
 m.load_bundler!
 
 load Gem.bin_path('bundler', 'bundle') if m.invoked_as_script?
+
