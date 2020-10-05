@@ -57,7 +57,7 @@ User.all
 
 - Github: [@AdesojiCodeMaster](https://github.com/AdesojiCodeMaster)
 - Twitter: [@codemas22665735](https://twitter.com/codemas22665735)
-- Linkedin: [linkedin](https://www.linkedin.com/in/adesoji-adewumi-7752aba5) 
+- Linkedin: [linkedin](https://www.linkedin.com/in/adesoji-adewumi) 
 
 ## 🤝 Contributing
 
